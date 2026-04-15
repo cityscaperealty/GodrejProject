@@ -1,0 +1,52 @@
+{
+  "placeholderImages": [
+    {
+      "id": "godrej-the-gale",
+      "description": "Godrej The Gale - Hinjewadi Phase I",
+      "imageUrl": "https://res.cloudinary.com/dti8eerce/image/upload/v1775678904/godrej-the-gale-1_j7glan.jpg",
+      "imageHint": "modern high-rise apartment"
+    },
+    {
+      "id": "godrej-greenfront",
+      "description": "Godrej Greenfront - Hinjewadi Phase I",
+      "imageUrl": "https://res.cloudinary.com/dti8eerce/image/upload/v1775681165/godrej-greenfront-2_k3orml.png",
+      "imageHint": "nature inspired modern apartment"
+    },
+    {
+      "id": "godrej-aqua-retreat",
+      "description": "Godrej Aqua Retreat - Hinjewadi Phase I",
+      "imageUrl": "https://res.cloudinary.com/dti8eerce/image/upload/v1775679779/godrej-aqua-retreat-1_lkquse.jpg",
+      "imageHint": "resort style residential complex"
+    },
+    {
+      "id": "godrej-river-royale",
+      "description": "Godrej River Royale - Mahalunge",
+      "imageUrl": "https://res.cloudinary.com/dti8eerce/image/upload/v1775680821/godrej-river-royale_uh3w0o.png",
+      "imageHint": "luxury riverside building"
+    },
+    {
+      "id": "godrej-evergreen-square",
+      "description": "Godrej Evergreen Square - Hinjewadi Phase III",
+      "imageUrl": "https://res.cloudinary.com/dti8eerce/image/upload/v1775677448/godrej-evergreen-square-1_iq7pwy.jpg",
+      "imageHint": "green smart residential tower"
+    },
+    {
+      "id": "godrej-grande-serene",
+      "description": "Godrej Grande Serene - Mamurdi",
+      "imageUrl": "https://res.cloudinary.com/dti8eerce/image/upload/v1775676596/godrej-grande-serene-1_sl4fbg.jpg",
+      "imageHint": "serene residential complex"
+    },
+    {
+      "id": "godrej-emerald-waters",
+      "description": "Godrej Emerald Waters - Pimpri",
+      "imageUrl": "https://res.cloudinary.com/dti8eerce/image/upload/v1775678060/godrej-emerald-waters-1_p9corx.jpg",
+      "imageHint": "waterfront luxury apartment"
+    },
+    {
+      "id": "godrej-ivara",
+      "description": "Godrej Ivara - Kharadi",
+      "imageUrl": "https://res.cloudinary.com/dti8eerce/image/upload/v1775770797/godrej-ivara_r2ypif.webp",
+      "imageHint": "premium IT hub residence"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Brand Colors */
+  --color-background: oklch(0.98 0.01 150); /* Near-white green tint */
+  --color-foreground: oklch(0.25 0 0);
+  
+  --color-primary: oklch(0.35 0.08 150); /* Forest Green */
+  --color-primary-foreground: oklch(1 0 0);
+  
+  --color-secondary: oklch(0.75 0.15 85); /* Gold */
+  --color-secondary-foreground: oklch(1 0 0);
+  
+  --color-accent: oklch(0.75 0.15 85);
+  --color-muted: oklch(0.92 0.01 150);
+  --color-muted-foreground: oklch(0.5 0.02 150);
+  
+  --color-border: oklch(0.88 0.02 150);
+  --color-input: oklch(0.88 0.02 150);
+  --color-ring: oklch(0.35 0.08 150);
+
+  /* Border Radius */
+  --radius-xl: 0.75rem;
+
+  /* Fonts (Assumes you have Geist or custom fonts set up) */
+  --font-headline: "Geist Sans", "Inter", sans-serif;
+  --font-body: "Geist Sans", "Inter", sans-serif;
+}
+
+/* Base Styles */
+@layer base {
+  *, ::after, ::before {
+    border-color: var(--color-border);
+  }
+  
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-body);
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-headline);
+  }
+}
+
+/* Custom Utility Classes */
+@utility glass {
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@utility gold-gradient {
+  background: linear-gradient(135deg, #DDAF3C 0%, #B8860B 100%);
+}
+
+@utility green-gradient {
+  background: linear-gradient(135deg, #2E6B2E 0%, #1A3D1A 100%);
+}

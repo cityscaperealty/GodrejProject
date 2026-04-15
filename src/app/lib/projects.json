@@ -1,0 +1,251 @@
+[
+  {
+    "id": "godrej-the-gale",
+    "slug": "godrej-the-gale",
+    "name": "Godrej The Gale",
+    "location": "Hinjewadi Phase I",
+    "price": "79.99 Lakhs Onwards",
+    "bhk": "1, 2 & 3 BHK",
+    "sqft": "562 - 1041 sq.ft",
+    "possession": "June 2028",
+    "status": "Fast Selling",
+    "image": "https://www.godrejproperties.com/_next/image?url=https%3A%2F%2Fgplwebsitecdnblob.blob.core.windows.net%2Fgodrej-cdn%2FImages%2Fcf70c4cf-994b-483d-88c0-6858bd96793c.jpg&w=1920&q=75",
+    "images": [
+      "https://res.cloudinary.com/dti8eerce/image/upload/v1775678904/godrej-the-gale-1_j7glan.jpg",
+      "https://res.cloudinary.com/dti8eerce/image/upload/v1775678969/godrej-the-gale-2_mcleyy.jpg",
+      "https://res.cloudinary.com/dti8eerce/image/upload/v1775678905/godrej-the-gale-3_firkly.jpg"
+    ],
+    "description": "Rising high as a premier Godrej Project Hinjewadi, The Gale offers premium apartments in Pune with maximum ventilation. This iconic property near IT Park Hinjewadi Phase 1 is designed for elite urban living.",
+    "amenities": ["Sky Terrace", "Gymnasium", "Party Hall", "Library", "Jogging Track", "Yoga Studio"],
+    "highlights": ["Godrej Hinjewadi Phase 1", "Property near IT Park Hinjewadi", "High Ventilation Design"],
+    "typologies": [
+      { "type": "1 BHK", "area": "562 sq.ft", "price": "₹79.99 L" },
+      { "type": "2 BHK", "area": "843 sq.ft", "price": "₹1.09 Cr" },
+      { "type": "3 BHK", "area": "1041 sq.ft", "price": "₹1.44 Cr" }
+    ],
+    "iframeLocation": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.9054310348333!2d73.72704217549949!3d18.578301782526488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bb8daf5f5065%3A0x821628f3d48f7499!2sThe%20Gale%20at%20Godrej%20Park%20World!5e0!3m2!1sen!2sin!4v1775766353784!5m2!1sen!2sin",
+    "reraQr": "https://res.cloudinary.com/dti8eerce/image/upload/v1775770481/godrej-the-gale-reraqr_fguyd8.webp",
+    "agentReraNumber": "A51900029955",
+    "projectReraNumber": "P52100054971",
+    "reraInfo": "This project is registered under MahaRERA. Registration details can be viewed on the official MahaRERA website: https://maharera.mahaonline.gov.in"
+  },
+  {
+    "id": "godrej-greenfront",
+    "slug": "godrej-greenfront",
+    "name": "Godrej Greenfront",
+    "location": "Hinjewadi Phase I",
+    "price": "1.29 Cr Onwards",
+    "bhk": "2, 3 & 4 BHK",
+    "sqft": "944 - 2229 sq.ft",
+    "possession": "Dec 2026",
+    "status": "New Launch", 
+    "image": "https://iili.io/BaRO7HP.png",
+    "images": [
+      "https://res.cloudinary.com/dti8eerce/image/upload/v1775681165/godrej-greenfront-2_k3orml.png",
+      "https://res.cloudinary.com/dti8eerce/image/upload/v1775681163/godrej-greenfront-3_b5qrft.png",
+      "https://res.cloudinary.com/dti8eerce/image/upload/v1775681087/godrej-greenfront-4_isr322.png"
+    ],
+    "description": "Discover nature-inspired luxury at Godrej Greenfront Hinjewadi. Located at Godrej Phase 1 Hinjewadi, these premium apartments in Pune feature sustainable architecture and elite amenities just minutes from the IT hub.",
+    "amenities": ["Club Reception & Lounge", "Swimming Pool & Deck", "Indoor Heated Pool", "Badminton Courts", "Squash Court", "Business Centre", "Steam & Sauna", "Multi-purpose Play Court", "Indoor Games Room"],
+    "highlights": ["Godrej Hinjewadi Phase 1", "Property near IT Park Hinjewadi", "Simplex & Duplex Options"],
+    "typologies": [
+      { "type": "2 BHK", "area": "944 sq.ft", "price": "₹1.29 Cr*" },
+      { "type": "3 BHK", "area": "1201 sq.ft", "price": "₹1.65 Cr*" },
+      { "type": "3 BHK", "area": "1255 sq.ft", "price": "₹1.72 Cr*" },
+      { "type": "4 BHK Duplex", "area": "2174 sq.ft", "price": "₹2.85 Cr*" },
+      { "type": "4 BHK Duplex", "area": "2229 sq.ft", "price": "₹2.95 Cr*" }
+    ],
+    "iframeLocation": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7563.811429252797!2d73.728498!3d18.578289!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bb2a9392de07%3A0x4da82127bd4d8928!2sThe%20Greenfront%20at%20Godrej%20Park%20World!5e0!3m2!1sen!2sus!4v1775765674888!5m2!1sen!2sus",
+    "reraQr": "https://res.cloudinary.com/dti8eerce/image/upload/v1775763584/godrej-greenfront-reraqr_lpegvp.jpg",
+    "agentReraNumber": "A51900029955",
+    "projectReraNumber": "P52100079064",
+    "reraInfo": "This project is registered under MahaRERA. Registration details can be viewed on the official MahaRERA website: https://maharera.mahaonline.gov.in"
+  },
+  {
+    "id": "godrej-aqua-retreat",
+    "slug": "godrej-aqua-retreat",
+    "name": "Godrej Aqua Retreat",
+    "location": "Hinjewadi Phase I",
+    "price": "1.22 Cr Onwards",
+    "bhk": "2 & 3 BHK",
+    "sqft": "873 - 1082 sq.ft",
+    "possession": "March 2027",
+    "status": "Premium",
+    "image": "https://www.godrejproperties.com/_next/image?url=https%3A%2F%2Fgplwebsitecdnblob.blob.core.windows.net%2Fgodrej-cdn%2FImages%2F772e71a7-d2b2-437e-8e16-2d73b3948285.webp&w=640&q=70",
+    "images": [
+      "https://www.godrejproperties.com/_next/image?url=https%3A%2F%2Fgplwebsitecdnblob.blob.core.windows.net%2Fgodrej-cdn%2FImages%2Fdc6ff739-7dfb-4a9a-85fc-f002dea9cf78.webp&w=640&q=70",
+      "https://res.cloudinary.com/dti8eerce/image/upload/v1775679779/godrej-aqua-retreat-1_lkquse.jpg",
+      "https://res.cloudinary.com/dti8eerce/image/upload/v1775679781/godrej-aqua-retreat-2_p30dys.jpg",
+      "https://res.cloudinary.com/dti8eerce/image/upload/v1775679778/godrej-aqua-retreat-3_pfcjaj.jpg"
+    ],
+    "description": "Godrej Aqua Retreat brings wellness-focused premium apartments in Pune to the heart of the city. Experience resort-style living at this iconic Godrej Phase 1 Hinjewadi property near IT Park Hinjewadi.",
+    "amenities": ["Water Features", "Resort Pool", "Wellness Center", "Clubhouse", "Meditation Zone", "Gym"],
+    "highlights": ["Godrej Hinjewadi Phase 1", "Property near IT Park Hinjewadi", "Wellness Focused Living"],
+    "typologies": [
+      { "type": "2 BHK", "area": "873 sq.ft", "price": "₹1.22 Cr*" },
+      { "type": "3 BHK", "area": "1082 sq.ft", "price": "₹1.55 Cr*" }
+    ],
+    "iframeLocation": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.8885535113277!2d73.72818749999999!3d18.5790625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bb32c6aeb61b%3A0xc01e91cce72fec57!2sThe%20Aqua%20Retreat%20at%20Godrej%20Park%20World%2C%20Hinjawadi%20Phase%201%2C%20Pune!5e0!3m2!1sen!2sin!4v1775766271269!5m2!1sen!2sin",
+    "reraQr": "https://res.cloudinary.com/dti8eerce/image/upload/v1775770366/godrej-aqua-retreat-reraqr_mrir1m.jpg",
+    "agentReraNumber": "A51900029955",
+    "projectReraNumber": "PM1260002500070",
+    "reraInfo": "This project is registered under MahaRERA. Registration details can be viewed on the official MahaRERA website: https://maharera.mahaonline.gov.in"
+  },
+  {
+    "id": "godrej-river-royale",
+    "slug": "godrej-river-royale",
+    "name": "Godrej River Royale",
+    "location": "Mahalunge",
+    "price": "2.75 Cr Onwards",
+    "bhk": "3 & 4 BHK",
+    "sqft": "1688 - 2304 sq.ft",
+    "possession": "Dec 2027",
+    "status": "Ultra Luxury",
+    "image": "https://www.godrejproperties.com/_next/image?url=https%3A%2F%2Fgplwebsitecdnblob.blob.core.windows.net%2Fgodrej-cdn%2FImages%2Fdw-Godrej-RiverRoyale-Pune-OverviewImage-1740X810%20480f3c14-f1b5-486c-a673-8c3458ea6a6c.webp&w=1920&q=75",
+    "images": [
+      "https://www.godrejproperties.com/_next/image?url=https%3A%2F%2Fgplwebsitecdnblob.blob.core.windows.net%2Fgodrej-cdn%2FImages%2Fdw-Godrej-RiverRoyale-Pune-OverviewImage-1740X810%20480f3c14-f1b5-486c-a673-8c3458ea6a6c.webp&w=1920&q=75",
+      "https://res.cloudinary.com/dti8eerce/image/upload/v1775680741/godrej-river-royale-3_da0uww.png",
+      "https://res.cloudinary.com/dti8eerce/image/upload/v1775680821/godrej-river-royale_uh3w0o.png",
+      "https://res.cloudinary.com/dti8eerce/image/upload/v1775680755/godrej-river-royale-1_hxcerg.png"
+    ],
+    "description": "Luxury redefined at Mahalunge. River Royale offers sprawling riverside premium apartments in Pune with world-class sports facilities and spectacular infinity pool views.",
+    "amenities": ["Infinity Pool with River View", "Mini Theatre", "Sky Cinema", "Golf & Cricket Simulator", "Amphitheatre", "Aqua Gym", "Indoor Sports Hub"],
+    "highlights": ["Riverside Luxury", "Premium Apartments in Pune", "Ultra Premium Assets"],
+    "typologies": [
+      { "type": "3 BHK", "area": "1688 sq.ft", "price": "₹2.75 Cr*" },
+      { "type": "4 BHK", "area": "2304 sq.ft", "price": "₹3.95 Cr*" }
+    ],
+    "iframeLocation": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.0888711228195!2d73.73372437549915!3d18.570031682533127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9786692480b%3A0x7802359c7ecbca66!2sGodrej%20River%20Royale%2C%20Baner%20-%20Hinjewadi%20Road%2C%20Pune!5e0!3m2!1sen!2sin!4v1775766487811!5m2!1sen!2sin",
+    "reraQr": "https://res.cloudinary.com/dti8eerce/image/upload/v1775770448/godrej-river-royale-reraqr_cd0f6a.jpg",
+    "agentReraNumber": "A51900029955",
+    "projectReraNumber": "P52100052957",
+    "reraInfo": "This project is registered under MahaRERA. Registration details can be viewed on the official MahaRERA website: https://maharera.mahaonline.gov.in"
+  },
+  {
+    "id": "godrej-evergreen-square",
+    "slug": "godrej-evergreen-square",
+    "name": "Godrej Evergreen Square",
+    "location": "Hinjewadi Phase III",
+    "price": "97 Lakhs Onwards",
+    "bhk": "2 & 3 BHK",
+    "sqft": "700 - 1074 sq.ft",
+    "possession": "June 2028",
+    "status": "Premium Project",
+    "image": "https://www.godrejproperties.com/_next/image?url=https%3A%2F%2Fgplwebsitecdnblob.blob.core.windows.net%2Fgodrej-cdn%2FImages%2F253893ad-9b4c-4621-88be-af45ccc1ea7a.jpg&w=1920&q=75",
+    "images": [
+      "https://res.cloudinary.com/dti8eerce/image/upload/v1775677448/godrej-evergreen-square-1_iq7pwy.jpg",
+      "https://res.cloudinary.com/dti8eerce/image/upload/v1775677451/godrej-evergreen-square-2_dyqzio.jpg",
+      "https://res.cloudinary.com/dti8eerce/image/upload/v1775677449/godrej-evergreen-square-3_ecnx1o.jpg",
+      "https://res.cloudinary.com/dti8eerce/image/upload/v1775677450/godrej-evergreen-square-4_xhxjal.jpg"
+    ],
+    "description": "Godrej Evergreen Square offers a vibrant lifestyle at Godrej Hinjewadi Phase 3. These smart homes and premium apartments in Pune are designed for a sustainable future in a lush green township.",
+    "amenities": ["Organic Garden", "Swimming Pool", "Co-working Space", "Fitness Studio", "Outdoor Deck", "Sky Walkway"],
+    "highlights": ["Godrej Hinjewadi Phase 3", "Smart Home Features", "Premium Apartments in Pune"],
+    "typologies": [
+      { "type": "2 BHK", "area": "700 sq.ft", "price": "₹97 L*" },
+      { "type": "2 BHK", "area": "852 sq.ft", "price": "₹1.15 Cr*" },
+      { "type": "3 BHK", "area": "963 sq.ft", "price": "₹1.35 Cr*" },
+      { "type": "3 BHK", "area": "1074 sq.ft", "price": "₹1.45 Cr*" }
+    ],
+    "iframeLocation": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.938857199666!2d73.68501487549945!3d18.57679508252763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bb8a63690447%3A0x58ffd3d5c7c2b618!2sGodrej%20Evergreen%20Square%2C%20Hinjawadi%20-%20Pune!5e0!3m2!1sen!2sin!4v1775766653172!5m2!1sen!2sin",
+    "reraQr": "https://res.cloudinary.com/dti8eerce/image/upload/v1775770406/godrej-evergreen-square-reraqr_ejokpx.jpg",
+    "agentReraNumber": "A51900029955",
+    "projectReraNumber": "P52100078240",
+    "reraInfo": "This project is registered under MahaRERA. Registration details can be viewed on the official MahaRERA website: https://maharera.mahaonline.gov.in"
+  },
+  {
+    "id": "godrej-grande-serene",
+    "slug": "godrej-grande-serene",
+    "name": "Godrej Grande Serene",
+    "location": "Mamurdi",
+    "price": "85 Lakhs Onwards",
+    "bhk": "2 & 3 BHK",
+    "sqft": "782 - 947 sq.ft",
+    "possession": "Dec 2026",
+    "status": "Newly Launched",
+    "image": "https://www.godrejproperties.com/_next/image?url=https%3A%2F%2Fgplwebsitecdnblob.blob.core.windows.net%2Fgodrej-cdn%2FImages%2Fdw-Godrej-Serene-Pune-OverviewImage-1740X810%201cafa551-c96f-4b0d-8b8a-2f970cc07231.webp&w=1920&q=75",
+    "images": [
+      "https://res.cloudinary.com/dti8eerce/image/upload/v1775676596/godrej-grande-serene-1_sl4fbg.jpg",
+      "https://res.cloudinary.com/dti8eerce/image/upload/v1775676597/godrej-grande-serene-2_o3mec6.jpg",
+      "https://res.cloudinary.com/dti8eerce/image/upload/v1775676597/godrej-grande-serene-3_dokudw.jpg"
+    ],
+    "description": "Discover a life of serenity at Mamurdi with Godrej Grande Serene. These premium apartments in Pune offer excellent connectivity and modern lifestyle features at all-inclusive pricing.",
+    "amenities": ["Grand Clubhouse", "Swimming Pool", "Jogging Track", "Multipurpose Hall", "Gymnasium", "Kids Play Area"],
+    "highlights": ["Premium Apartments in Pune", "Excellent Connectivity", "Serene Environment"],
+    "typologies": [
+      { "type": "2 BHK", "area": "782 sq.ft", "price": "₹85 - 87 L" },
+      { "type": "3 BHK", "area": "947 sq.ft", "price": "₹1.08 Cr*" }
+    ],
+    "iframeLocation": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3779.9035572697207!2d73.7089921755015!3d18.66832328245416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b10f74a7eb59%3A0x8b410e1bc98551cf!2sGodrej%20Serene!5e0!3m2!1sen!2sin!4v1775766845002!5m2!1sen!2sin",
+    "reraQr": "https://res.cloudinary.com/dti8eerce/image/upload/v1775770423/godrej-grande-serene-reraqr_zopi74.jpg",
+    "agentReraNumber": "A51900029955",
+    "projectReraNumber": "P52100047405",
+    "reraInfo": "This project is registered under MahaRERA. Registration details can be viewed on the official MahaRERA website: https://maharera.mahaonline.gov.in"
+  },
+  {
+    "id": "godrej-emerald-waters",
+    "slug": "godrej-emerald-waters",
+    "name": "Godrej Emerald Waters",
+    "location": "Pimpri",
+    "price": "85 Lakhs Onwards",
+    "bhk": "1, 2, 3 & 4 BHK",
+    "sqft": "560 - 1850 sq.ft",
+    "possession": "March 2029",
+    "status": "New Launch",
+    "image": "https://www.godrejproperties.com/_next/image?url=https%3A%2F%2Fgplwebsitecdnblob.blob.core.windows.net%2Fgodrej-cdn%2FImages%2Fb156a176-9c8e-4139-83f1-706f977015e6.jpg&w=1920&q=75",
+    "images": [
+      "https://res.cloudinary.com/dti8eerce/image/upload/v1775678060/godrej-emerald-waters-1_p9corx.jpg",
+      "https://res.cloudinary.com/dti8eerce/image/upload/v1775678062/godrej-emerald-waters-2_zetq0z.jpg",
+      "https://res.cloudinary.com/dti8eerce/image/upload/v1775678059/godrej-emerald-waters-3_onobuj.jpg",
+      "https://res.cloudinary.com/dti8eerce/image/upload/v1775678060/godrej-emerald-waters-4_ozyxph.jpg"
+    ],
+    "description": "Experience luxury by the water with Godrej Emerald Waters. These premium apartments in Pune offer 50+ amenities in Pimpri, just 1 minute from the Metro and major tech hubs.",
+    "amenities": ["50+ Lifestyle Amenities", "2 Grand Clubhouses", "Infinity Pool", "Riverside Promenade", "Sky Lounge", "Indoor Games Room"],
+    "highlights": ["1 Min from Metro", "Premium Apartments in Pune", "Premium Pimpri Location"],
+    "typologies": [
+      { "type": "1 BHK", "area": "560 sq.ft", "price": "₹85 L*" },
+      { "type": "2 BHK", "area": "850 sq.ft", "price": "₹1.39 Cr*" },
+      { "type": "3 BHK", "area": "1250 sq.ft", "price": "₹1.85 Cr*" },
+      { "type": "4 BHK (2+2)", "area": "1850 sq.ft", "price": "₹2.85 Cr*" }
+    ],
+    "iframeLocation": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.11529810063!2d73.81263692550029!3d18.613883132497776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c7f27c4c1cf3%3A0x1add56c735e62df7!2sGodrej%20Emerald%20Waters%2C%20Pimpri%2C%20Pune!5e0!3m2!1sen!2sin!4v1775766966143!5m2!1sen!2sin",
+    "reraQr": "https://res.cloudinary.com/dti8eerce/image/upload/v1775770387/godrej-emerald-waters-reraqr_sll0kw.jpg",
+    "agentReraNumber": "A51900029955",
+    "projectReraNumber": "P52100051200",
+    "reraInfo": "This project is registered under MahaRERA. Registration details can be viewed on the official MahaRERA website: https://maharera.mahaonline.gov.in"
+  },
+  {
+    "id": "godrej-ivara",
+    "slug": "godrej-ivara",
+    "name": "Godrej Ivara",
+    "location": "Kharadi",
+    "price": "1.25 Cr Onwards",
+    "bhk": "2, 3 & 4 BHK",
+    "sqft": "725 - 1650 sq.ft",
+    "possession": "Ready to Move",
+    "status": "Bestseller",
+    "image": "https://www.godrejproperties.com/landing-page/pune/residential/godrej-ivara/Images/ivara_lp_desk.webp",
+    "images": [
+      "https://www.godrejproperties.com/landing-page/pune/residential/godrej-ivara/new_images/8.webp",
+      "https://www.godrejproperties.com/landing-page/pune/residential/godrej-ivara/new_images/1.webp",
+      "https://www.godrejproperties.com/landing-page/pune/residential/godrej-ivara/new_images/4.webp",
+      "https://www.godrejproperties.com/landing-page/pune/residential/godrej-ivara/new_images/2.webp"
+    ],
+    "description": "Godrej Ivara in Kharadi offers opulent premium apartments in Pune, providing a perfect blend of luxury and comfort in the heart of the city's primary IT hub.",
+    "amenities": ["Luxury Clubhouse", "Sky Lounge", "Indoor Games", "Pet Park", "Business Center", "Spa"],
+    "highlights": ["Ready to Move", "Kharadi IT Hub Connectivity", "Premium Apartments in Pune"],
+    "typologies": [
+      { "type": "2 BHK Premium", "area": "725 - 750 sq.ft", "price": "₹1.25 Cr" },
+      { "type": "3 BHK Elite", "area": "875 - 900 sq.ft", "price": "₹1.59 Cr" },
+      { "type": "3 BHK Regal", "area": "975 - 1000 sq.ft", "price": "₹1.79 Cr" },
+      { "type": "3 BHK Ultra", "area": "1100 - 1150 sq.ft", "price": "₹2.09 Cr" },
+      { "type": "3 BHK Opulent", "area": "1200 - 1250 sq.ft", "price": "₹2.39 Cr" },
+      { "type": "4 BHK Iconic", "area": "1550 - 1650 sq.ft", "price": "₹3.09 Cr" }
+    ],
+    "iframeLocation": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.51763944538!2d73.96636257549886!3d18.550687482548675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c3712924bb47%3A0x975ace27307cc480!2sGodrej%20Ivara%2C%20Kharadi%20%E2%80%93%20Premium%202%2C%203%20%26%204%20BHK%20Residences!5e0!3m2!1sen!2sin!4v1775767072641!5m2!1sen!2sin",
+    "reraQr": "https://res.cloudinary.com/dti8eerce/image/upload/v1775770792/godrej-ivara-reraqr_glzua0.jpg",
+    "agentReraNumber": "A51900029955",
+    "projectReraNumber": "PR1260002502426",
+    "reraInfo": "This project is registered under MahaRERA. Registration details can be viewed on the official MahaRERA website: https://maharera.mahaonline.gov.in"
+  }
+]
