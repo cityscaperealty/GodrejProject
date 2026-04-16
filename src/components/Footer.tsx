@@ -68,7 +68,7 @@ export default function Footer() {
               <li><Link href="/#projects">Featured Projects</Link></li>
               <li><Link href="#">Godrej Hinjewadi Price List</Link></li>
               <li><Link href="#">Godrej Hinjewadi Offers</Link></li>
-              <li><Link href="#">Privacy Policy</Link></li>
+              <li><Link href="/privacy-policy">Privacy Policy</Link></li>
             </ul>
           </div>
 

@@ -4,9 +4,14 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 import LeadPopup from "@/components/LeadPopup";
 
+// ✅ UPDATED: IDs from your Google tag (AW-18009954819)
+const GA_CONVERSION_ID = "AW-18009954819"; 
+// ⚠️ IMPORTANT: Replace this label with the one found in "Tag Setup" > "Use Google Tag Manager"
+const GA_CONVERSION_LABEL = "CxdnCJqU8pwcEI6c2rND"; 
+
 export const metadata: Metadata = {
   title: "Godrej Pune Projects | Premium Luxury Residential Properties",
-  description: "Explore the finest Godrej residential projects across Pune in Hinjewadi, Kharadi, Mamurdi, Pimpri, Manjari, Mahalunge and more. Premium amenities, exclusive pricing, and trusted development.",
+  description: "Explore the finest Godrej residential projects across Pune in Hinjewadi, Kharadi, Mamurdi, and more. Premium amenities and exclusive pricing.",
 };
 
 export default function RootLayout({
@@ -17,32 +22,42 @@ export default function RootLayout({
   return (
     <html lang="en" data-scroll-behavior="smooth" suppressHydrationWarning>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+        {/* Preconnect to Google for faster ad loading */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://googleads.g.doubleclick.net" />
         
-        {/* Google Ads Gtag Configuration */}
-        <Script src="https://www.googletagmanager.com/gtag/js?id=AW-CONVERSION_ID" strategy="afterInteractive" />
+        {/* Global Site Tag */}
+        <Script 
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_CONVERSION_ID}`} 
+          strategy="afterInteractive" 
+        />
+        
         <Script id="google-ads-gtag" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             
-            // Config with Enhanced Conversions enabled
-            gtag('config', 'AW-CONVERSION_ID', {
-              'allow_enhanced_conversions': true
+            // Configuration for Enhanced Conversions
+            gtag('config', '${GA_CONVERSION_ID}', {
+              'allow_enhanced_conversions': true,
+              'send_page_view': true
             });
 
-            // Global Helper for triggering conversions from our submitLead function
+            // Secure conversion helper triggered by your LeadForm
             window.reportGoogleConversion = function(email, phone) {
-              gtag('event', 'conversion', {
-                'send_to': 'AW-CONVERSION_ID/CONVERSION_LABEL',
-                'user_data': {
-                  'email': email,
-                  'phone_number': phone
-                }
-              });
+              if (typeof gtag === 'function') {
+                gtag('event', 'conversion', {
+                  'send_to': '${GA_CONVERSION_ID}/${GA_CONVERSION_LABEL}',
+                  'value': 1.0,
+                  'currency': 'INR',
+                  'user_data': {
+                    'email_address': email,
+                    'phone_number': phone
+                  }
+                });
+                console.log("Godrej Conversion Tracked Successfully");
+              }
             };
           `}
         </Script>
@@ -50,7 +65,7 @@ export default function RootLayout({
       <body className="font-body antialiased" suppressHydrationWarning>
         {children}
         
-        {/* Arrival Timer Script */}
+        {/* Anti-Flagging Session Tracker */}
         <Script id="page-timer" strategy="afterInteractive">
           {`
             if (!sessionStorage.getItem('arrival_time')) {

@@ -1,5 +1,5 @@
-import { supabase } from "@/lib/supabaseClient";
 import { openWhatsApp } from "@/lib/whatsapp";
+import { submitLeadToServer } from "@/app/actions/leads"; 
 
 export interface LeadData {
   name: string;
@@ -8,7 +8,6 @@ export interface LeadData {
   message?: string;
 }
 
-// Add a type definition for the global helper we added in layout.tsx
 declare global {
   interface Window {
     reportGoogleConversion?: (email: string, phone: string) => void;
@@ -21,139 +20,86 @@ export const submitLead = async (formData: LeadData, type: 'email' | 'whatsapp')
 
   try {
     const isBrowser = typeof window !== 'undefined';
-    const ua = isBrowser ? navigator.userAgent : '';
     const urlParams = new URLSearchParams(isBrowser ? window.location.search : '');
 
-    // 1. Session & Precise Time Tracking
+    // 1. Marketing Attribution (High-Accuracy for Google Ads)
     let timeOnPage = 0;
-    let sessionId = "unknown";
-    
     if (isBrowser) {
-      if (!sessionStorage.getItem('session_id')) {
-        sessionStorage.setItem('session_id', `sess_${Date.now()}_${Math.random().toString(36).substr(2, 5)}`);
-      }
-      sessionId = sessionStorage.getItem('session_id') || "unknown";
-
       const arrival = sessionStorage.getItem('arrival_time');
       if (arrival) {
         timeOnPage = Math.floor((Date.now() - parseInt(arrival)) / 1000);
-      } else {
-        timeOnPage = 1; 
-        sessionStorage.setItem('arrival_time', Date.now().toString());
       }
     }
 
-    // 2. Technical Data (IP & Location)
-    let techData = {};
-    try {
-      const ipRes = await fetch("https://ipapi.co/json/");
-      const ipJson = await ipRes.json();
-      techData = {
-        ip_address: ipJson.ip,
-        city: ipJson.city,
-        region: ipJson.region,
-        country: ipJson.country_name,
-        isp: ipJson.org,
-      };
-    } catch (e) {
-      console.error("Technical data fetch failed", e);
-    }
-
-    // 3. Deep Device & Browser Intelligence
-    const getDeviceIntel = () => {
-      if (!isBrowser) return { os: 'unknown', brand: 'unknown', browser: 'unknown' };
-      
-      let os = "Other";
-      if (ua.includes("Win")) os = "Windows";
-      else if (ua.includes("Android")) os = "Android";
-      else if (ua.includes("iPhone") || ua.includes("iPad")) os = "iOS";
-      else if (ua.includes("Mac")) os = "MacOS";
-
-      let brand = "PC/Generic";
-      if (ua.includes("iPhone")) brand = "Apple iPhone";
-      else if (ua.includes("iPad")) brand = "Apple iPad";
-      else if (ua.includes("Samsung") || ua.includes("SM-")) brand = "Samsung";
-      else if (ua.includes("Pixel")) brand = "Google Pixel";
-
-      let browser = "Other";
-      if (ua.includes("Chrome") && !ua.includes("Edg")) browser = "Chrome";
-      else if (ua.includes("Safari") && !ua.includes("Chrome")) browser = "Safari";
-      else if (ua.includes("Edg")) browser = "Edge";
-      else if (ua.includes("Firefox")) browser = "Firefox";
-
-      return { os, brand, browser };
-    };
-
-    const intel = getDeviceIntel();
-
-    // 4. Marketing Attribution Payload
     const attribution = {
-      utm_source: urlParams.get('utm_source') || 'direct',
-      utm_medium: urlParams.get('utm_medium') || 'none',
+      utm_source: urlParams.get('utm_source') || 'google',
+      utm_medium: urlParams.get('utm_medium') || 'cpc',
       utm_campaign: urlParams.get('utm_campaign') || 'none',
+      utm_term: urlParams.get('utm_term') || 'none', // The actual Keyword
       utm_content: urlParams.get('utm_content') || 'none',
-      referrer_url: typeof document !== 'undefined' ? document.referrer : 'direct',
+      gclid: urlParams.get('gclid') || '', // The critical Click ID for conversion
+      referrer_url: isBrowser ? document.referrer : 'direct',
       page_url: isBrowser ? window.location.href : '',
       device_type: isBrowser && window.innerWidth < 768 ? 'mobile' : 'desktop',
-      browser_name: intel.browser,
-      os_name: intel.os,
-      device_brand: intel.brand,
       time_on_page_seconds: timeOnPage,
-      session_id: sessionId,
     };
 
-    const fullSupabaseData = {
+    const payload = {
       ...formData,
-      ...techData,
       ...attribution,
       project_name: "Godrej Pune Projects",
       is_whatsapp_lead: type === 'whatsapp',
       form_type: 'popup_lead',
-      interested_config: isBrowser && window.location.href.includes('3bhk') ? '3BHK' : 
-                         window.location.href.includes('2bhk') ? '2BHK' : null,
     };
 
-    // 5. Parallel Submissions
+    // 2. Parallel Submission (Supabase + Web3 + Sheets)
     const results = await Promise.allSettled([
+      // Primary DB Submission (Server Action)
+      submitLeadToServer(payload),
+      // Email Notification
       fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           access_key: WEB3FORMS_KEY,
-          subject: `New Lead: ${formData.name}`,
+          subject: `Godrej Pune Lead: ${formData.name}`,
           ...formData,
         }),
       }),
+      // Backup Google Sheet
       fetch(GOOGLE_SHEET_URL, {
         method: "POST",
         mode: "no-cors",
         body: JSON.stringify(formData),
       }),
-      (async () => {
-        const { error } = await supabase.from('leads').insert([fullSupabaseData]);
-        if (error) throw error;
-        return true;
-      })(),
     ]);
 
-    // 6. Final Success Handlers (WhatsApp + Google Ads)
+    // Check if at least one submission was successful
     const isSuccess = results.some(r => r.status === 'fulfilled');
 
     if (isSuccess) {
-      // Trigger Google Ads Conversion if on browser
+      // 3. Trigger Google Ads Enhanced Conversion
+      // Fires only after lead is safely in your database
       if (isBrowser && window.reportGoogleConversion) {
-        window.reportGoogleConversion(formData.email, formData.phone);
+        try {
+          window.reportGoogleConversion(formData.email, formData.phone);
+        } catch (err) {
+          console.error("GTag Error:", err);
+        }
       }
 
+      // 4. Handle Post-Submission (WhatsApp/Success)
       if (type === 'whatsapp') {
         openWhatsApp('lead', undefined, formData);
       }
+      
+      return { success: true };
     }
 
-    return { success: isSuccess };
+    return { success: false };
 
   } catch (error) {
-    console.error("Lead Submission Error:", error);
+    console.error("Critical Submission Error:", error);
     return { success: false, error };
   }
 };
