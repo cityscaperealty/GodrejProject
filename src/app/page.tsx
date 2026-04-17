@@ -7,7 +7,7 @@ import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import MobileBottomBar from '@/components/MobileBottomBar';
 import projectsData from '@/app/lib/projects.json';
 
-// Import from your new Homepage folder
+// Page Sections
 import HeroSection from '@/components/HomePage/HeroSection';
 import SearchFilters from '@/components/HomePage/SearchFilters';
 import TrustBadges from '@/components/HomePage/TrustBadges';
@@ -37,12 +37,15 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col" suppressHydrationWarning>
+    <div className="min-h-screen flex flex-col bg-white" suppressHydrationWarning>
+      {/* Header contains the Logo + Preferred Partner Tagline */}
       <Header />
+      
       <FloatingWhatsApp />
       <MobileBottomBar />
 
       <main className="flex-grow">
+        {/* HeroSection contains the Authorized Partner Disclosure */}
         <HeroSection onTriggerForm={triggerForm} />
         
         <SearchFilters 
@@ -53,6 +56,7 @@ export default function Home() {
           onTriggerForm={triggerForm}
         />
 
+        {/* TrustBadges highlight the RERA and Partnership status */}
         <TrustBadges />
 
         <ProjectsSection 
@@ -64,6 +68,7 @@ export default function Home() {
         <CtaSection onTriggerForm={triggerForm} />
       </main>
 
+      {/* Footer contains the Final Legal Disclaimer for Google Ads */}
       <Footer />
     </div>
   );
