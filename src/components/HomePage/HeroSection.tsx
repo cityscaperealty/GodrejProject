@@ -1,4 +1,4 @@
-import { ShieldCheck } from 'lucide-react';
+import { ShieldCheck, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { openWhatsApp } from '@/lib/whatsapp';
 
@@ -28,6 +28,19 @@ export default function HeroSection({ onTriggerForm }: HeroSectionProps) {
       <div className="container mx-auto px-4 sm:px-8 lg:px-12 relative z-10 max-w-[1440px]">
         <div className="max-w-5xl mx-auto text-center space-y-4 md:space-y-6 pt-10 pb-16 md:pt-20 md:pb-28">
           
+          {/* Subtle Legal Disclosure - High trust for Google, Minimal for Users */}
+          <div className="flex flex-col items-center mb-4 space-y-1">
+            <div className="flex items-center gap-2 text-white/40">
+               <CheckCircle className="h-3 w-3" />
+               <span className="text-[10px] md:text-xs font-light uppercase tracking-[0.2em]">
+                 Authorized Channel Partner: Cityscape Realty
+               </span>
+            </div>
+            <span className="text-[9px] text-accent/50 font-medium tracking-widest uppercase">
+              MahaRERA: A52100029799
+            </span>
+          </div>
+
           {/* Badge: New Launch Keywords */}
           <div className="inline-flex items-center space-x-2 bg-accent/20 border border-accent/30 rounded-full px-3 py-1 md:px-5 md:py-2 backdrop-blur-sm">
             <ShieldCheck className="h-3 w-3 md:h-4 md:w-4 text-accent" />
@@ -48,7 +61,7 @@ export default function HeroSection({ onTriggerForm }: HeroSectionProps) {
                 Premium 2, 3 & 4 BHK Flats in Hinjewadi
               </p>
               <p className="text-[9px] md:text-xs font-medium text-white/70 uppercase tracking-[0.2em]">
-                Godrej Township Hinjewadi • Exclusive Pre-launch Offers
+                Project by Godrej Properties • Marketing by Cityscape Realty
               </p>
             </div>
 
@@ -58,7 +71,7 @@ export default function HeroSection({ onTriggerForm }: HeroSectionProps) {
             </p>
           </div>
 
-          {/* CTA Buttons: Corrected Handlers */}
+          {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center pt-2 md:pt-6 px-8 md:px-0">
             <Button 
               onClick={(e) => handleWhatsAppAction(e, 'brochure')}
