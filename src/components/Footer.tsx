@@ -37,7 +37,9 @@ export default function Footer() {
             />
 
             <p className="text-white/60 text-sm leading-relaxed font-light">
-              Godrej Properties brings innovation, sustainability, and excellence to real estate with a 126-year legacy of trust. Explore the latest <strong>Pre-launch Godrej Hinjewadi</strong> opportunities.
+              Godrej Properties brings innovation and excellence to real estate. 
+              As an <strong>Authorized Channel Partner</strong>, Cityscape Realty 
+              showcases the latest <strong>Pre-launch Godrej Hinjewadi</strong> opportunities.
             </p>
 
             {/* SOCIAL */}
@@ -48,7 +50,6 @@ export default function Footer() {
               >
                 <FaInstagram className="text-white/70 hover:text-white" />
               </Link>
-
               <Link
                 href="#"
                 className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-accent transition-all"
@@ -66,13 +67,13 @@ export default function Footer() {
             <ul className="space-y-5 text-sm text-white/60">
               <li><Link href="/">Home</Link></li>
               <li><Link href="/#projects">Featured Projects</Link></li>
-              <li><Link href="#">Godrej Hinjewadi Price List</Link></li>
-              <li><Link href="#">Godrej Hinjewadi Offers</Link></li>
+              <li><Link href="#">Price List</Link></li>
+              <li><Link href="#">Current Offers</Link></li>
               <li><Link href="/privacy-policy">Privacy Policy</Link></li>
             </ul>
           </div>
 
-          {/* LOCATIONS & KEYWORDS */}
+          {/* LOCATIONS */}
           <div>
             <h4 className="font-bold text-lg mb-8 text-accent uppercase tracking-widest">
               Our Locations
@@ -80,7 +81,6 @@ export default function Footer() {
             <ul className="space-y-5 text-sm text-white/60">
               <li>Hinjewadi Phase 1 & 3</li>
               <li>Kharadi IT Park</li>
-              <li>Investment in Hinjewadi Pune</li>
               <li>Mahalunge Hills</li>
               <li>Mundhwa Riverside</li>
               <li>All Over Pune</li>
@@ -92,19 +92,16 @@ export default function Footer() {
             <h4 className="font-bold text-lg mb-8 text-accent uppercase tracking-widest">
               Contact Us
             </h4>
-
             <div className="flex items-center gap-3">
               <FaMapMarkerAlt className="text-accent" />
               <p className="text-sm text-white/60">Pune, Maharashtra, India</p>
             </div>
-
             <div className="flex items-center gap-3">
               <FaPhoneAlt className="text-accent" />
               <a href="tel:919156421125" className="text-white/60 hover:text-white">
                 +91 9156421125
               </a>
             </div>
-
             <div className="flex items-center gap-3">
               <FaEnvelope className="text-accent" />
               <a href="mailto:cityscaperealty27@gmail.com" className="text-white/60 hover:text-white">
@@ -115,15 +112,12 @@ export default function Footer() {
         </div>
 
         {/* RERA SECTION */}
-        <div className="border-t border-white/10 pt-12 flex justify-center">
+        <div className="border-t border-white/10 pt-12 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="flex items-center gap-5 bg-white/5 border border-white/10 rounded-2xl px-6 py-5">
-            <Image
-              src="/images/rera-qr.png"
-              alt="RERA QR"
-              width={80}
-              height={80}
-              className="rounded-lg"
-            />
+            <div className="w-20 h-20 bg-white/10 rounded-lg flex items-center justify-center text-xs text-white/40">
+              {/* Image component for QR */}
+              <Image src="/images/rera-qr.png" alt="RERA QR" width={80} height={80} className="rounded-lg" />
+            </div>
             <div>
               <div className="flex items-center gap-2 text-accent">
                 <FaShieldAlt />
@@ -132,20 +126,27 @@ export default function Footer() {
                 </span>
               </div>
               <p className="text-white font-bold text-lg">A52100029799</p>
+              <p className="text-white/40 text-[10px]">Cityscape Realty</p>
             </div>
+          </div>
+
+          {/* CRITICAL GOOGLE ADS DISCLAIMER */}
+          <div className="max-w-2xl text-center md:text-right">
+            <p className="text-[10px] leading-relaxed text-white/40 font-light">
+              <strong>Disclaimer & Privacy Policy:</strong> This website is for informational purposes only and does not 
+              constitute an offer to avail of any service. The prices mentioned are subject to change without notice 
+              and properties for sale are subject to availability. <strong>This is not the official website of Godrej Properties. 
+              This site is managed by Cityscape Realty, an Authorized Channel Partner.</strong> The images shown are for 
+              representational purposes only. 
+            </p>
           </div>
         </div>
 
         {/* COPYRIGHT & TAGS */}
         <div className="pt-8 text-center space-y-2">
           <p className="text-xs text-white/30">
-            © {mounted ? new Date().getFullYear() : 2026} Godrej Pune Projects | Premium Real Estate Investment in Hinjewadi Pune
+            © {mounted ? new Date().getFullYear() : 2026} Cityscape Realty | Partner for Godrej Pune Projects
           </p>
-          <div className="flex flex-wrap justify-center gap-x-4 gap-y-1 text-[10px] text-white/10">
-            <span>Godrej Hinjewadi Price List</span>
-            <span>Godrej Hinjewadi Offers</span>
-            <span>Pre-launch Godrej Hinjewadi</span>
-          </div>
         </div>
 
       </div>
